@@ -1,0 +1,27 @@
+{
+  "name": "playwithtypescritp",
+  "version": "1.0.0",
+  "description": "play with typescript",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felicepagano/playwithtypescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "study"
+  ],
+  "author": "Felice Pagano <paganofelice@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felicepagano/playwithtypescript/issues"
+  },
+  "homepage": "https://github.com/felicepagano/playwithtypescript#readme",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "tslint": "^5.9.1"
+  }
+}

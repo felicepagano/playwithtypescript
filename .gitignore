@@ -2,3 +2,5 @@
 node_modules/
 dist/
 playwithtypescript.code-workspace
+.vscode/
+.idea/

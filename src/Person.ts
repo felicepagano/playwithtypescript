@@ -7,23 +7,24 @@ interface IPerson {
     ssn?: string;
 }
 
-let p: IPerson = {
+// directly instanciate an interface
+const p: IPerson = {
+    age: 31,
     firstName: "a",
-    lastName: "b", 
-    age: 31
+    lastName: "b",
     // ssn is optional
 }
 
 // interface could be used to enforce the contract between the classes and a certain API.
-interface Comparator<T> {
+interface IComparator<T> {
     compareTo(value: T): number;
 }
 
-export class Person implements Comparator<Person> {
-    constructor(public firstName: string, public lastName: string, public age: number, public _ssn: string){}
+export class Person implements IComparator<Person> {
+    constructor(public firstName: string, public lastName: string, public age: number, public _ssn: string) { }
 
     public compareTo(value: Person): number {
-        let comparison = this.firstName >= value.firstName ? 1 : -1;
+        const comparison = this.firstName >= value.firstName ? 1 : -1;
         return comparison;
     }
 }
@@ -32,12 +33,11 @@ class Employee extends Person {
 
 }
 
-// structural typing system
-interface Pippo {
+// structural typing system means that it two object have the same structure both can be assined to a generic type
+// with the same structure.
+interface IPippo {}
 
-}
-
-class Pluto implements Pippo {
+class Pluto implements IPippo {
     constructor(public member: string){}
 }
 
@@ -45,7 +45,7 @@ class Paperino {
     public member: string;
 }
 
-let a: Array<Pippo> = []
+const a: Array<IPippo>[] = [];
 // Pluto has the same structure of Paperino
 a[0] = new Pluto("");
 a[1] = new Paperino();

@@ -45,7 +45,7 @@ class Paperino {
     public member: string;
 }
 
-const a: Array<IPippo>[] = [];
+const a: Array<IPippo> = [];
 // Pluto has the same structure of Paperino
 a[0] = new Pluto("");
 a[1] = new Paperino();

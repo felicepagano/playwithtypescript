@@ -124,7 +124,9 @@ Three approaches:
 2. Install the library via npm, if the type definition file exists install it via npm, in the ts code import this lib’s global object import $ from ‘query’;. Typescript compiler’s errors and autocomplete.
 3. Create your own type definition file *.d.ts. 
 
-##Resources
+Resources
+===
 
 https://basarat.gitbooks.io/typescript/docs/getting-started.html
+
 https://www.gitbook.com/book/pagalvin/yet-another-typescript-book/details
